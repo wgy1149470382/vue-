@@ -2,7 +2,7 @@
    
     <div id="f_list">
        <div class="header-bar">
-            <a class="icon-arrow-left" @click="routerBack"><img src="//img02.hua.com/m/icon/headChevronLeft.png" /></a><p>列表页</p><router-link to=""></router-link>
+            <a class="icon-arrow-left" ><img src="//img02.hua.com/m/icon/headChevronLeft.png" /></a><p>列表页</p><router-link to=""></router-link>
         </div>
        <ul class="list_t">
             <li>综合</li>

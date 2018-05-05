@@ -169,7 +169,7 @@ import ajax from '../../utils/httpclient.js';
                 loop: true,
                 speed: 600,
                 autoplay: 3000,
-                // 如果需要前进后退按钮
+                //前进后退按钮
                 navigation: {
                   nextEl: '.swiper-button-next',
                   prevEl: '.swiper-button-prev',
@@ -194,6 +194,7 @@ import ajax from '../../utils/httpclient.js';
             routerBack(){
                 this.$router.go(-1);
             },
+            //添加购物车
             addCart(){
                 console.log(666)
                 var token = localStorage.getItem('huaUserToken') || '';
@@ -221,6 +222,7 @@ import ajax from '../../utils/httpclient.js';
         },
         
         created(){
+            //获取商品数据
             ajax.get('product?id='+this.id).then((res)=>{
                 this.data = res.data.data[0];
                 console.log(this.data)

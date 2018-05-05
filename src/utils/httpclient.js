@@ -1,7 +1,7 @@
 import axios from 'axios';
 import qs from 'qs';
 
-const baseUrl = 'http://10.3.133.71:6655/';
+const baseUrl = 'http://localhost:6655/';
 
 var filterUrl = function(_url){
     if(_url && _url.startsWith('http')){

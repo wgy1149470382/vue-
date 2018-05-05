@@ -42,18 +42,19 @@ import ajax from '../../utils/httpclient'
             //删除
             delData(idx){
                 if(confirm("你确定删除这个商品吗？")){
-                    this.data.splice(idx,1)
+                   
 
                         var token = localStorage.getItem('huaUserToken') || '';
 
                         var pramas = {
                             'token':token,
-                            'id':"5aebfe596e962829c4f5b8e4",
+                            'id':this.data[idx]._id,
                         }
 
                         ajax.post('product/userlistdelete',pramas,{'auth':token}).then(function(res){
-                            console.log(res)
-                        });
+                            this.data.splice(idx,1)
+                            
+                        }.bind(this));
                 }
             },
             //减
@@ -70,7 +71,7 @@ import ajax from '../../utils/httpclient'
                         }
 
                         ajax.post('product/userlistupdate',pramas,{'auth':token}).then(function(res){
-                            console.log(res)
+                            
                         });
                         
             },
@@ -87,7 +88,7 @@ import ajax from '../../utils/httpclient'
                         }
 
                         ajax.post('product/userlistupdate',pramas,{'auth':token}).then(function(res){
-                            console.log(res)
+                            
                         });
             },
             selectData(item){
