@@ -1,0 +1,14 @@
+/* 
+* @Author: Marte
+* @Date:   2018-05-01 10:49:11
+* @Last Modified by:   Marte
+* @Last Modified time: 2018-05-05 16:05:26
+*/
+.header-bar{height: 1.173333rem;background: rgba(250, 250, 250, 0.9);border-bottom: 0.026667rem solid #E4E4E4;text-align: center;width:100%;display: flex;padding: 0 0.32rem;}
+.header-bar p{width:80%;font-size: 0.426667rem;line-height: 1.173333rem;}
+.header-bar a{flex:1;font-size: 0.64rem;line-height: 1.173333rem;}
+.header-bar a img{margin-top: 0.293333rem;}
+#f_list .list_t{display: flex;border-left:0.026667rem solid #E7E7E7;border-top:0.026667rem solid #E7E7E7;height:1.133333rem;width: 100%;background: #fff;}
+#f_list .list_t>li{flex:1;line-height:1.133333rem;text-align: center;border-bottom:0.026667rem solid #E7E7E7;border-right:0.026667rem solid #E7E7E7;flex:25%;}
+.shoping {flex-wrap:wrap;display: flex;padding:0.133333rem 0 0 0.133333rem;}
+.shoping li{ height: 6.533333rem;flex:40%;border:1px solid #ddd;margin:0 0.106667rem 0.133333rem 0; }
